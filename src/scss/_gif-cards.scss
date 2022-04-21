@@ -1,0 +1,121 @@
+.gif-cards{
+
+
+    grid-area: gif-cards;
+   
+    padding: 2rem 0;
+    // margin-top: 5.7rem;
+    z-index: 5;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+   display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    .gif-cards-uno{
+
+
+        background-color: $VeryDarkMagenta;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 3.5rem;
+
+        .gif-cards-header{
+            // background-color: blue;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            img{
+                border-radius: 50%;
+                width: 40px;
+            }
+
+            .usuario{
+
+                
+                p{
+                    font-size: 13px;
+                    color: $LightGrayishMagenta;
+                    font-weight: 700;
+                   margin-top: .5rem;
+                }
+
+                p span{
+                    color: hsl(300, 28%, 38%);
+                }
+            }
+
+        }
+
+        .gif-cards-section{
+            margin-top: 2rem;
+        p{  
+          color:$LightGrayishMagenta;
+          font-size: 12.5px;
+          line-height: 2rem;
+        }
+    }
+
+
+
+
+    }
+
+
+    .gif-cards-dos{
+        
+        @extend .gif-cards-uno;
+        
+        margin-top: 4rem;
+        margin-left: 1rem;
+        
+    }
+
+
+    .gif-cards-tres{
+
+        @extend .gif-cards-uno;
+        margin-top: 8rem;
+        margin-left: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  
+
+.gif-cards{
+    
+    flex-direction: column;
+    
+}
+
+.gif-cards-dos, .gif-cards-tres{
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+}
+
+
+
+
+
+        
+}

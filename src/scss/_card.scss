@@ -1,0 +1,151 @@
+.contenedor {
+    width: 100%;
+    height: 750px;
+
+    display: grid;
+    grid-template-areas:
+        "texto-usuarios stars"
+        "gif-cards gif-cards";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 12rem 18.5rem;
+
+
+
+
+    .texto-usuarios {
+        grid-area: texto-usuarios;
+        // background-color: blue;
+        z-index: 5;
+        h1 {
+            width: 75%;
+            font-weight: 700;
+            font-size: 4.2rem;
+            color: $VeryDarkMagenta;
+            line-height: 4.3rem;
+        }
+
+        p {
+            margin-top: 1.3rem;
+            width: 80%;
+            font-size: 1.3rem;
+            line-height: 2.3rem;
+            color: $VeryDarkMagenta;
+            font-weight: 400;
+
+
+
+
+
+        }
+
+        @media only screen and (max-width: 8000px) {
+
+            p{
+                width: 100%;
+            }
+
+            h1{
+                
+                width: 100%;
+            }
+
+
+         }
+    }
+
+    .stars {
+        grid-area: stars;
+        // background-color: pink;
+        z-index: 5;
+
+        .caja-stars {
+            width: 80%;
+            border-radius: 1rem;
+            background-color: hsl(306, 45%, 96%);
+            display: flex;
+            z-index: 5;
+            padding: 1.5rem 0;
+            justify-content: center;
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+            padding-right: 2rem;
+
+            .estrellas {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-right: 3rem;
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            p {
+                color: $VeryDarkMagenta;
+                padding-top: 0.5rem;
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+
+        .caja-stars-dos {
+            margin-left: 5rem;
+            z-index: 5;
+            margin-top: 1.5rem;
+        }
+
+        .caja-stars-tres {
+            margin-left: 10rem;
+            z-index: 5;
+            margin-top: 1.5rem;
+        }
+
+
+
+        @media only screen and (max-width: 800px) {
+
+            .caja-stars{
+                width: 100%;
+                margin:2rem 0;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 6rem;
+                gap: 1rem;
+            }
+
+
+            .estrellas{
+                margin: 0 !important;
+                justify-content: center;
+                align-items: center;
+                gap: 0;
+            }
+
+         }
+
+
+
+
+
+    }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+   .contenedor {
+    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    
+    }
+  }

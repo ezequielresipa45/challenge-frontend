@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+:root{
+    font-size: 11px;
+    font-family: 'Spartan', sans-serif;
+}
+
+a{
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+
+
+
+.bg-desktop1, .bg-desktop2{
+    
+    position: absolute;
+    z-index: 1;
+}
+
+.bg-desktop2{
+    transform: translate(45%, 11%);
+}
+
+//Colores Primarios
+
+$VeryDarkMagenta: hsl(300, 43%, 22%);
+$SoftPink: hsl(333, 80%, 67%);
+
+//Neutrales
+
+$DarkGrayishMagenta: hsl(303, 10%, 53%);
+$LightGrayishMagenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+
+
+@media only screen and (max-width: 800px) {
+  
+
+    body{
+        
+        overflow: visible;
+    }
+    .bg-desktop1, .bg-desktop2{
+        display: none;
+    }
+            
+    }
